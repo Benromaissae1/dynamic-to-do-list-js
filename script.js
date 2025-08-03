@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const addButton = document.getElementById('add-task');
+    const addButton = document.getElementById('add-task-btn');
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('task-list');
 
@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const listItem = document.createElement('li');
         listItem.textContent = taskText;
+        
 
-        // إنشاء زر الحذف (لاحظ استخدام 'button' كسلسلة نصية)
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Remove';
         deleteButton.className = 'remove-btn';
